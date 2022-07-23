@@ -16,3 +16,8 @@
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
+# add feed
+sed -i '$a src-git system https://github.com/riyuejz/system.git;main' feeds.conf.default
+sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
+echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/generic" >> /etc/opkg/customfeeds.conf
+echo "src/gz custom_arch https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/$(cat /etc/os-release | grep OPENWRT_ARCH | awk -F '"' '{print $2}')" >> /etc/opkg/customfeeds.conf
