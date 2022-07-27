@@ -61,7 +61,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: router-config/zaiyinwrt/feeds.conf.default
   CONFIG_FILE: router-config/zaiyinwrt/.config
   DIY_P1_SH: router-config/zaiyinwrt/diy-part1.sh
