@@ -60,8 +60,8 @@ on:
   #- cron: '0 17 * * 0'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: openwrt-22.03
   FEEDS_CONF: router-config/zaiyinwrt/feeds.conf.default
   CONFIG_FILE: router-config/zaiyinwrt/.config
   DIY_P1_SH: router-config/zaiyinwrt/diy-part1.sh
