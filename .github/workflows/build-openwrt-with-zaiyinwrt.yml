@@ -48,9 +48,6 @@ on:
           - 5.15.50
           - 5.18.5
           - 5.10.160
-
-
-
           - 6.1.1
       auto_kernel:
         description: "Auto use the latest kernel"
