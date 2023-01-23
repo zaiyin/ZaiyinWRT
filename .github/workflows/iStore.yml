@@ -104,7 +104,7 @@ jobs:
           [[ -e "${CONFIG_FILE}" ]] && cp -f ${CONFIG_FILE} openwrt/.config
 
           cd openwrt/
-          ${GITHUB_WORKSPACE}/${DIY_P2_SH}
+      
       - name: Download package
         id: package
         run: |
